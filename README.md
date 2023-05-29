@@ -1,4 +1,4 @@
-## Python course practise programs:
+## Python practise programs:
 
 > 1] Basics
 
