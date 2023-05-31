@@ -27,30 +27,31 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island!")
 print("Your mission is to find the treasure.")
 
-choice1 = input('You are at a crossroad, where do you want to go? Type "left" or "right" : ').lower()
+choice1 = input('You are at a crossroad, where do you want to go? Type "left" or "right" : \n').lower()
 
 if choice1 == "right":
     choice2 = input('''You have come to a lake..
 There is an island in the middle of the lake. T
 Type wait to "wait" to wait for a boat or "swim"
-to swim accross the lake : ''').lower()
+to swim accross the lake : \n''').lower()
 
     if choice2 == "wait":
+
         choice3 = input('''You arrive at the island unharmed..
 There is a house with 3 doors with colours Red, Yellow & Blue
-Which colour do you choose ?''').lower()
-       
-        if choice3 == "Red":
-            print("It is a room full of fire! Game Over.")
-        elif choice3 == "Yellow":
-            print("You found the treasure! You Win!")
-        elif choice3 == "Blue":
-            print("You enter a room where LordTroldemort is waiting with his axe. Game Over!")
+Which colour do you choose ?\n''').lower()
+
+        if choice3 == "red":
+            print("It is a room full of fire! Game Over.\n")
+        elif choice3 == "yellow":
+            print("You found the treasure! You Win!\n")
+        elif choice3 == "blue":
+            print("You enter a room where LordTroldemort is waiting with his axe. Game Over!\n")
         else:
-            print("The door does not exist!")
-            
+            print("The door does not exist!\n")
+
     else:
-        print("You have been attacked by an angry trout! Game over.")
-    
+        print("You have been attacked by an angry trout! Game over.\n")
+
 else:
-    print("You fell in a trapdoor! Game over.")
+    print("You fell in a trapdoor! Game over.\n")
